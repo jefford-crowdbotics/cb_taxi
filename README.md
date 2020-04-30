@@ -2,21 +2,12 @@
 
 This package requires at least Python 3.6.
 
-To install module locally, go to the `dist/` directory and run.
+To install run:
 
 ```
-python3 -m pip install uber_clone_pkg_CROWDBOTICS-0.0.1-py3-none-any.whl
+python3 -m pip install git+https://github.com/jefford-crowdbotics/cb_taxi.git
 ```
 
 # Testing
 
-Test files are located in `tests/` folder
-
-# Module Dependencies:
-* Open Street Map (OSM) API (https://github.com/metaodi/osmapi)
-* GeoPy (https://geopy.readthedocs.io/en/stable/) - for calculating distance
-* PyrouteLib (https://wiki.openstreetmap.org/wiki/PyrouteLib) - identifying route
-
-# Uninstalling Module
-
-run ```pip uninstall -r requirements.txt``` in the parent directory
+Test Repo: https://github.com/jefford-crowdbotics/uber_clone_pkg
