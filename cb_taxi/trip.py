@@ -7,7 +7,12 @@ from .lib.pyroutelib2.models.loadOsm import LoadOsm
 
 # Initializing map data
 MAP_DATA = LoadOsm("car")
+
+BASE_FARE = 3
 MAX_SEATS = 3
+RESPONSE_TIME = 60  # seconds
+PROCESS_TIME = 180  # seconds
+MAX_RADIUS = 1  # km
 
 
 class TripConfig():
@@ -16,15 +21,17 @@ class TripConfig():
     relating to a Booking/Trip
     """
 
-    def __init__(self):
+    def __init__(self, base_fare=BASE_FARE, max_seats=MAX_SEATS,
+                 response_time=RESPONSE_TIME, process_time=PROCESS_TIME,
+                 max_radius=MAX_RADIUS):
         """
         Default values for configuration
         """
-        self.base_fare = 3
-        self.max_seats = MAX_SEATS
-        self.response_time = 60
-        self.process_time = 180
-        self.max_radius = 1
+        self.base_fare = base_fare
+        self.max_seats = max_seats
+        self.response_time = response_time
+        self.process_time = process_time
+        self.max_radius = max_radius
 
     def set_base_fare(self, value):
         """

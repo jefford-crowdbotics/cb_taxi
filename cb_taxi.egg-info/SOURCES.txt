@@ -1,4 +1,5 @@
 README.md
+setup.cfg
 setup.py
 cb_taxi/__init__.py
 cb_taxi/driver.py
