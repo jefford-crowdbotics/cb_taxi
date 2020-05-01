@@ -80,7 +80,7 @@ class TripConfig():
         else:
             raise Exception("Invalid parameter type. Function"
                             "should only receive integer/float values")
-    
+
     def set_max_radius(self, value):
         """
         Update the value of the default max radius
@@ -99,17 +99,16 @@ class Trip():
     Holds information about a trip
     """
 
-    def __init__(self, config, rider, start_node, end_node,
+    def __init__(self, config, start_node, end_node,
                  seats_reserved, fare=0, driver=False):
         """
         Params:
-            config, driver, rider   - objects
+            config, driver          - objects
             start_node, end_node    - latitude and longitude tuple values
             seats_reserved, fare    - float/int values
         """
         self.config = config
         self.driver = driver
-        self.rider = rider
         self.start_node = start_node  # pickup location
         self.end_node = end_node  # drop off location
         self.seats_reserved = seats_reserved

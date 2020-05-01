@@ -17,7 +17,6 @@ TRIP_CONFIG = TripConfig()
 # Trip to Match - 1
 TRIP_TO_MATCH_1 = Trip(
     config=TRIP_CONFIG,
-    rider=False,
     start_node=(7.0495, 125.5907),
     end_node=(7.0517, 125.5903),
     seats_reserved=2,
@@ -26,7 +25,6 @@ TRIP_TO_MATCH_1 = Trip(
 # Trip to Match - 2
 TRIP_TO_MATCH_2 = Trip(
     config=TRIP_CONFIG,
-    rider=False,
     start_node=(7.0739938, 125.6126872),
     end_node=(7.0753224, 125.6132193),
     seats_reserved=2,
@@ -36,7 +34,6 @@ TRIP_TO_MATCH_2 = Trip(
 # Sample route: https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=7.0493%2C125.5885%3B7.0777%2C125.6140#map=15/7.0632/125.6002
 TRIP_MATCHING = Trip(
     config=TRIP_CONFIG,
-    rider=False,
     start_node=(7.0493, 125.5885),
     end_node=(7.0777, 125.6140),
     seats_reserved=2,
@@ -45,7 +42,6 @@ TRIP_MATCHING = Trip(
 # Mismatching Trip - 1
 TRIP_MISMATCHING_1 = Trip(
     config=TRIP_CONFIG,
-    rider=False,
     start_node=(7.0581343, 125.5685814),
     end_node=(7.0571582, 125.5721307),
     seats_reserved=1,
@@ -54,7 +50,6 @@ TRIP_MISMATCHING_1 = Trip(
 # Mismatching Trip - 2
 TRIP_MISMATCHING_2 = Trip(
     config=TRIP_CONFIG,
-    rider=False,
     start_node=(7.0606491, 125.5640547),
     end_node=(7.0619090, 125.5611702),
     seats_reserved=1,
